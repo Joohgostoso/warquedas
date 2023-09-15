@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.game{
+    border: 1px solid;
+    height: 80%;
+    width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.soldardo{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    top: 10px;
+    left: 350px;
+    animation: soldardo-animation 3s infinite linear;
+}
+
+@keyframes soldardo-animation{
+    from{
+        top: 10px;
+        left: 350px;
+    }
+
+    to{
+        top: 800px;
+        left: 350;
+    }
+
+}
+
+.canhaum{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    top: 720px;
+    left: 350px;
+    transform: scaleY(-1)
+}
